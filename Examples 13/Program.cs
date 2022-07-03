@@ -9,8 +9,11 @@ else if (N > 99 & N <= 999)
     int a = N%10;
     Console.WriteLine(a); 
 }
-else if (N > 999 & N <= 9999)
+else
 {
-    int b = N%100; int c = b/10;
-    Console.WriteLine(c);
+while (N > 999)
+{
+N = N/10; 
+}
+Console.WriteLine(N%10);
 }
