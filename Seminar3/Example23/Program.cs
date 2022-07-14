@@ -3,7 +3,15 @@
 for(int count = 1; count <= userNumbers; count++)
 {
     int rez = count*count*count;
-    Console.WriteLine(rez);
+    if(count <= userNumbers - 1)
+    {
+      Console.Write($"{rez}, ");  
+    }
+
+    else
+    {
+      Console.Write($"{rez}.");  
+    }
 }
 
 int InputInt(string output)   // Метод ввода числа с консоли
